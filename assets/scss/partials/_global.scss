@@ -1,0 +1,37 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+$font-family-secondary: 'Pacifico', cursive;
+
+// Colors
+$body-color: #4D4D4D;
+$brand-primary: #0089E8;
+$brand-secondary: #0A142F;
+$btn-hover: darken($brand-primary, 10);
+$link-color: $brand-primary;
+$link-hover: darken($brand-primary, 10);
+$fill-yellow: #FFC30F;
+$fill-grey-dark: #363642;
+$fill-grey-dark-v2: #30303B;
+$fill-grey-light: #D3D7E3;
+$fill-grey-light-v2: #D9D9D9;
+$fill-grey-v1: #566B89;
+$fill-grey-v2: #A6A6A6;
+$fill-purple: #3C3C62;
+$fill-black-faded: #111111;
+$fill-white-v1: #f4f4f4;
+$fill-blue-v1: #566B89;
+
+$fill-orange-light: #BB913F;
+
+
+/* Font Weights for Google Fonts */
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;

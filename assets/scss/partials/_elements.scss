@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include global-font;
+}
+
+a {
+    @include transition-standard;
+    color: $body-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $link-hover;
+    }
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: $fw-bold;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading;
+}
+
+h1 {
+    @include h1;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    @include h3;
+}
+
+h4,
+h5 {
+    @include h4;
+}
+
+.btn {
+    @include btn
+}
+
+.btn-grey {
+    @include btn(grey)
+}
+
+.icon-btn {
+    @include btn(icon)
+}
+
+.cta-link {
+    color: $link-color;
+    font-weight: $fw-semi-bold;
+
+    &:hover {
+        color: $link-hover;
+    }
+}
+
+// swiper nav__btn starts
+.swiper__nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.nav__btn {
+    position: static;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $brand-primary;
+    border-radius: 50%;
+
+
+    @include media-breakpoint-up(md) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 45px;
+        height: 45px;
+    }
+
+    &:after {
+        font-size: 20px !important;
+        font: var(--fa-font-solid);
+        color: #fff;
+
+        @include media-breakpoint-up(md) {
+            font-size: 30px !important;
+        }
+    }
+
+    &.swiper-button-prev {
+
+        &:after {
+            content: "\f104";
+        }
+    }
+
+    &.swiper-button-next {
+
+        &:after {
+            content: "\f105";
+        }
+    }
+}
+// swiper nav__btn ends
